@@ -90,6 +90,7 @@ p.success {
 }
 
 p.danger {
+  color: #421f69;
   color: red;
 }
 /************ Navbar Css ************/
