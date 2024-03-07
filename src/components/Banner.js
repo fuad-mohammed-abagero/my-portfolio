@@ -15,9 +15,9 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    // "Front-End Developer",
+    "Front-End Developer",
     // "Back-End Developer",
-    "Full-stack developer",
+    // "Full-stack developer",
   ];
   const period = 1000;
 
@@ -63,59 +63,39 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <Reveal>
-                    <h1>
-                      {`Hi! I'm Fuad Mohammed`}{" "}
-                      <span
-                        className="txt-rotate"
-                        dataPeriod="1000"
-                        data-rotate='[ "front-end Developer", "Back-end Developer" ]'
-                      >
-                        <span className="wrap">{text}</span>
-                      </span>
-                    </h1>
-                  </Reveal>
-                  <Reveal>
-                    <p>
-                      I craft pixel-perfect web and mobile experiences using
-                      React, React Native, Node.js, and Express.js. From idea to
-                      launch, I blend creativity and technical expertise to
-                      bring your digital visions to life.
-                      <br />
-                      Let's collaborate to build something extraordinary!
-                    </p>
-                  </Reveal>
-                  <Reveal>
-                    <a href={Resume} download className="resume">
-                      <button>Download CV</button>
-                    </a>
-                  </Reveal>
-                  {/* <button onClick={() => console.log("connect")}>
+            <div>
+              <span className="tagline">Welcome to my Portfolio</span>
+              <Reveal>
+                <h1>
+                  Fuad Mohammed <br />
+                  <strong> Web Developer</strong>
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p>
+                  I craft pixel-perfect web and mobile experiences using React,
+                  Node.js, and Express.js. From idea to launch, I blend
+                  creativity and technical expertise to bring your digital
+                  visions to life.
+                  <br />
+                  Let's collaborate to build something extraordinary!
+                </p>
+              </Reveal>
+              <Reveal>
+                <a href={Resume} download className="resume">
+                  <button>Download CV</button>
+                </a>
+              </Reveal>
+              {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button> */}
-                </div>
-              )}
-            </TrackVisibility>
+            </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn " : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" className="b-img" />
-                </div>
-              )}
+              <div>
+                <img src={headerImg} alt="Header Img" className="b-img" />
+              </div>
             </TrackVisibility>
           </Col>
         </Row>

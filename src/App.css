@@ -520,6 +520,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 .proj-txtx {
+  font-size: 20px;
   position: absolute;
   text-align: center;
   top: 65%;

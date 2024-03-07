@@ -3,11 +3,6 @@
 this is build by fuad mohammed abagero
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> b45a91b908dddebf76d7e30982cc678c78270c53
 Built using:
 
 - Front-end library: React

@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 export const ProjectCard = ({ title, description, imgUrl, wlink }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={18} sm={6} md={4}>
       <a
         href={wlink}
         className="p-card-a"
@@ -14,7 +14,7 @@ export const ProjectCard = ({ title, description, imgUrl, wlink }) => {
           <img src={imgUrl} />
           <div className="proj-txtx">
             <h4>{title}</h4>
-            <span>{description}</span>
+            <pre>{description}</pre>
             <br />
             <span>click to check website</span>
           </div>
